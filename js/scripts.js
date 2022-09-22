@@ -6,15 +6,17 @@ function Pizza(size) {
 Pizza.prototype.basePrice = function() {
   if (this.size === "Small") {
     return 5;
-  } else if (this .size === "Medium") {
+  } else if (this.size === "Medium") {
     return 10;
+  } else if (this.size === "Large") {
+    return 15;
   }
 }
 
 //UI Logic
 function handleFormSubmission(event) {
   event.preventDefault();
-  let pizza = new Pizza("Medium");
+  let pizza = new Pizza("Large");
   console.log(pizza.basePrice());
 }
 
