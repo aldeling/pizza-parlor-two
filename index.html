@@ -35,7 +35,7 @@
             Gluten Free
           </label><br>
         <h3>Sauce</h3>
-          <select>
+          <select id="sauce">
             <option>Pizza Sauce</option>
             <option>Alfredo Sauce</option>
             <option>Italian Butter</option>
@@ -60,7 +60,7 @@
             Vegan Cheese
           </label><br>
         <h3>Meat</h3>
-          <select>
+          <select id="meat">
             <option>Pepperoni</option>
             <option>Sausage</option>
             <option>Bacon</option>
@@ -86,7 +86,7 @@
             None
           </label><br>
         <h3>Other Toppings</h3>
-          <select>
+          <select id="other">
             <option>Mushrooms</option>
             <option>Olives</option>
             <option>Tomatoes</option>
@@ -96,12 +96,12 @@
           <button type="submit">Get Order</button>
       </form>
     <h2>Order Receipt</h2>
-      <p>Size</p>
-      <p>Crust</p>
-      <p>Sauce</p>
-      <p>Cheese</p>
-      <p>Meat</p>
-      <p>Greens</p>
-      <p>Other Toppings</p>
+      <p>Siz: <span id="sizeDisplay"></span></p>
+      <p>Crust: <span id="crustDisplay"></span></p>
+      <p>Sauce: <span id="sauceDisplay"></span></p>
+      <p>Cheese: <span class="cheese"></span></p>
+      <p>Meat: <span class="meat"></span></p>
+      <p>Greens: <span class="greens"></span></p>
+      <p>Other Toppings: <span class="other"></span></p>
 </body>
 </html>
