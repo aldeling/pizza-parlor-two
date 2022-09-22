@@ -42,5 +42,9 @@ Test: "It should return 11 when gluten free is added to size small"
 Code: if (this.crust === "Gluten Free") {return basePrice("Small")+6;}
 Expected Output: 11
 
+Test: "It should return 9 when thin crust is added to size small"
+Code: if (this.crust === "Thin Crust") {return basePrice("Small")+4;}
+Expected Output: 9
+
 ### License
 [GNU GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/) Copyright (c) 09/22/2022 Athea DeLing
