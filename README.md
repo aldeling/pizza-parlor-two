@@ -28,5 +28,9 @@ Test: "It should return 15 when larger is put into the function"
 Code: else if (this.size === "Larger") {return 15;}
 Expected Output: 15
 
+Test: "It should return 20 when extra larger is put into the function"
+Code: else if (this.size === "Extra Larger") {return 20;}
+Expected Output: 20
+
 ### License
 [GNU GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/) Copyright (c) 09/22/2022 Athea DeLing
