@@ -32,5 +32,11 @@ Test: "It should return 20 when extra larger is put into the function"
 Code: else if (this.size === "Extra Larger") {return 20;}
 Expected Output: 20
 
+Describe: priceWithCrust()
+
+Test: "It should return 11 when deep dish is added to size small"
+Code: if (this.crust === "Deep Dish") {return basePrice("Small")+6;}
+Expected Output: 11
+
 ### License
 [GNU GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/) Copyright (c) 09/22/2022 Athea DeLing
