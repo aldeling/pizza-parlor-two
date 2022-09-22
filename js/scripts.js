@@ -19,13 +19,15 @@ Pizza.prototype.basePrice = function() {
 Pizza.prototype.priceWithCrust = function() {
   if ((this.crust === "Deep Dish") || (this.crust === "Gluten Free")) {
     return this.basePrice() + 6;
+  } else if (this.crust === "Thin Crust") {
+    return this.basePrice() + 4;
   }
 }
 
 //UI Logic
 function handleFormSubmission(event) {
   event.preventDefault();
-  let pizza = new Pizza("Small","Gluten Free");
+  let pizza = new Pizza("Small","Thin Crust");
   console.log(pizza.priceWithCrust());
 }
 
