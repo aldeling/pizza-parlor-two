@@ -21,13 +21,15 @@ Pizza.prototype.priceWithCrust = function() {
     return this.basePrice() + 6;
   } else if (this.crust === "Thin Crust") {
     return this.basePrice() + 4;
+  } else {
+    return this.basePrice();
   }
 }
 
 //UI Logic
 function handleFormSubmission(event) {
   event.preventDefault();
-  let pizza = new Pizza("Small","Thin Crust");
+  let pizza = new Pizza("Small","Traditional");
   console.log(pizza.priceWithCrust());
 }
 
