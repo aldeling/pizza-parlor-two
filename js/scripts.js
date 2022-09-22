@@ -26,11 +26,15 @@ Pizza.prototype.priceWithCrust = function() {
   }
 }
 
+Pizza.prototype.formatPrice = function() {
+  return "$" + this.priceWithCrust() + ".00";
+}
+
 //UI Logic
 function handleFormSubmission(event) {
   event.preventDefault();
   let pizza = new Pizza("Small","Traditional");
-  console.log(pizza.priceWithCrust());
+  console.log(pizza.formatPrice());
 }
 
 window.addEventListener("load", function() {
