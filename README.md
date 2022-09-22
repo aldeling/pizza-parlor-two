@@ -14,6 +14,10 @@ There are two ways that the user can choose to set up this application
 ### Known Bugs
 * There are no known bugs currently
 ### Tests
+Describe: basePrice()
 
+Test: "It should return 5 when small is put into the function"
+Code: if (this.size === "Small"){return 5;}
+Expected Output: 5
 ### License
 [GNU GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/) Copyright (c) 09/22/2022 Athea DeLing
