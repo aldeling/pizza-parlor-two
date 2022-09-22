@@ -17,7 +17,7 @@ Pizza.prototype.basePrice = function() {
 }
 
 Pizza.prototype.priceWithCrust = function() {
-  if (this.crust === "Deep Dish") {
+  if ((this.crust === "Deep Dish") || (this.crust === "Gluten Free")) {
     return this.basePrice() + 6;
   }
 }
@@ -25,7 +25,7 @@ Pizza.prototype.priceWithCrust = function() {
 //UI Logic
 function handleFormSubmission(event) {
   event.preventDefault();
-  let pizza = new Pizza("Small","Deep Dish");
+  let pizza = new Pizza("Small","Gluten Free");
   console.log(pizza.priceWithCrust());
 }
 
