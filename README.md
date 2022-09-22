@@ -17,12 +17,16 @@ There are two ways that the user can choose to set up this application
 Describe: basePrice()
 
 Test: "It should return 5 when small is put into the function"
-Code: if (this.size === "Small"){return 5;}
+Code: if (this.size === "Small") {return 5;}
 Expected Output: 5
 
-Test: "It should return 10 when small is put into the function"
-Code: else if (this.size === "Medium"){return 10;}
+Test: "It should return 10 when medium is put into the function"
+Code: else if (this.size === "Medium") {return 10;}
 Expected Output: 10
+
+Test: "It should return 15 when larger is put into the function"
+Code: else if (this.size === "Larger") {return 15;}
+Expected Output: 15
 
 ### License
 [GNU GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/) Copyright (c) 09/22/2022 Athea DeLing
