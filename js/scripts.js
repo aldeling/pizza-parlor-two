@@ -1,6 +1,7 @@
 //Business Logic
-function Pizza(size) {
+function Pizza(size, crust) {
   this.size = size;
+  this.crust = crust;
 }
 
 Pizza.prototype.basePrice = function() {
@@ -15,11 +16,17 @@ Pizza.prototype.basePrice = function() {
   }
 }
 
+Pizza.prototype.priceWithCrust = function() {
+  if (this.crust === "Deep Dish") {
+    return this.basePrice() + 6;
+  }
+}
+
 //UI Logic
 function handleFormSubmission(event) {
   event.preventDefault();
-  let pizza = new Pizza("Extra Large");
-  console.log(pizza.basePrice());
+  let pizza = new Pizza("Small","Deep Dish");
+  console.log(pizza.priceWithCrust());
 }
 
 window.addEventListener("load", function() {
