@@ -50,5 +50,11 @@ Test "It should return 5 when any other crust is selected"
 Code: else { return basePrice("Small");}
 Expected Output: 5
 
+Describe: formatPrice()
+
+Test: "It should return $5.00 when all selections have been made"
+Code: return "$" + this.priceWithCrust() + ".00"
+Expected Output: $5.00
+
 ### License
 [GNU GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/) Copyright (c) 09/22/2022 Athea DeLing
