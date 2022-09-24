@@ -8,101 +8,109 @@
 </head>
 <body>
   <h1>The Pizza Parlor</h1>
-    <h2>Order Your Pizza Here!</h2>
-      <form id="pizza">
-        <h3>Size</h3>
-          <select id="size">
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-            <option>Extra Larger</option>
-          </select>
-        <h3>Crust</h3>
-          <label>
-            <input type="radio" name="crust" value="Traditional Crust" checked>
-            Traditional Crust
-          </label><br>
-          <label>
-            <input type="radio" name="crust" value="Thin Crust">
-            Thin Crust
-          </label><br>
-          <label>
-            <input type="radio" name="crust" value="Deep Dish">
-            Deep Dish
-          </label><br>
-          <label>
-            <input type="radio" name="crust" value="Gluten Free">
-            Gluten Free
-          </label><br>
-        <h3>Sauce</h3>
-          <select id="sauce">
-            <option>Pizza Sauce</option>
-            <option>Alfredo Sauce</option>
-            <option>Italian Butter</option>
-            <option>Ranch</option>
-            <option>None</option>
-          </select>
-        <h3>Cheese</h3>
-          <label>
-            <input type="radio" name="cheese" value="Mozzarella" checked>
-            Mozzarella 
-          </label><br>
-          <label>
-            <input type="radio" name="cheese" value="Cheddar">
-            Cheddar
-          </label><br>
-          <label>
-            <input type="radio" name="cheese" value="Pepper Jack">
-            Pepper Jack
-          </label><br>
-          <label>
-            <input type="radio" name="cheese" value="Vegan Cheese">
-            Vegan Cheese
-          </label><br>
-        <h3>Meat</h3>
-          <select id="meat">
-            <option>Pepperoni</option>
-            <option>Sausage</option>
-            <option>Bacon</option>
-            <option>Ham</option>
-            <option>Vegan Pepperoni</option>
-            <option>None</option>
-          </select>
-        <h3>Greens</h3>
-          <label>
-            <input type="radio" name="greens" value="Bell Pepper" checked>
-             Bell Pepper
-          </label><br>
-          <label>
-            <input type="radio" name="greens" value="Spinach">
-            Spinach
-          </label><br>
-          <label>
-            <input type="radio" name="greens" value="Jalapeno">
-            Jalapeno
-          </label><br>
-          <label>
-            <input type="radio" name="greens" value="None">
-            None
-          </label><br>
-        <h3>Other Toppings</h3>
-          <select id="other">
-            <option>Mushrooms</option>
-            <option>Olives</option>
-            <option>Tomatoes</option>
-            <option>Pineapple</option>
-            <option>None</option>
-          </select><br>
-          <button type="submit">Get Order</button>
-      </form>
-    <h2>Order Receipt</h2>
-      <p>Size: <span id="sizeDisplay"></span></p>
-      <p>Crust: <span id="crustDisplay"></span></p>
-      <p>Sauce: <span id="sauceDisplay"></span></p>
-      <p>Cheese: <span class="cheese"></span></p>
-      <p>Meat: <span class="meat"></span></p>
-      <p>Greens: <span class="greens"></span></p>
-      <p>Other Toppings: <span class="other"></span></p>
-      <p>Total Price: <span class="total"></span></p>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <h2>Order Your Pizza Here!</h2>
+          <form id="pizza">
+            <h3>Size</h3>
+              <select id="size">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>Extra Large</option>
+              </select>
+            <h3>Crust</h3>
+              <label>
+                <input type="radio" name="crust" value="Traditional Crust" checked>
+                Traditional Crust
+              </label><br>
+              <label>
+                <input type="radio" name="crust" value="Thin Crust">
+                Thin Crust
+              </label><br>
+              <label>
+                <input type="radio" name="crust" value="Deep Dish">
+                Deep Dish
+              </label><br>
+              <label>
+                <input type="radio" name="crust" value="Gluten Free">
+                Gluten Free
+              </label><br>
+            <h3>Sauce</h3>
+              <select id="sauce">
+                <option>Pizza Sauce</option>
+                <option>Alfredo Sauce</option>
+                <option>Italian Butter</option>
+                <option>Ranch</option>
+                <option>None</option>
+              </select>
+          <h3>Cheese</h3>
+              <label>
+                <input type="radio" name="cheese" value="Mozzarella" checked>
+                Mozzarella 
+              </label><br>
+              <label>
+                <input type="radio" name="cheese" value="Cheddar">
+                Cheddar
+              </label><br>
+              <label>
+                <input type="radio" name="cheese" value="Pepper Jack">
+                Pepper Jack
+              </label><br>
+              <label>
+                <input type="radio" name="cheese" value="Vegan Cheese">
+                Vegan Cheese
+              </label><br>
+            <h3>Meat</h3>
+              <select id="meat">
+                <option>Pepperoni</option>
+                <option>Sausage</option>
+                <option>Bacon</option>
+                <option>Ham</option>
+                <option>Vegan Pepperoni</option>
+                <option>None</option>
+              </select>
+            <h3>Greens</h3>
+              <label>
+                <input type="radio" name="greens" value="Bell Pepper" checked>
+                Bell Pepper
+              </label><br>
+              <label>
+              <input type="radio" name="greens" value="Spinach">
+                Spinach
+              </label><br>
+              <label>
+                <input type="radio" name="greens" value="Jalapeno">
+                Jalapeno
+              </label><br>
+              <label>
+                <input type="radio" name="greens" value="None">
+                None
+              </label><br>
+            <h3>Other Toppings</h3>
+              <select id="other">
+                <option>Mushrooms</option>
+                <option>Olives</option>
+                <option>Tomatoes</option>
+                <option>Pineapple</option>
+                <option>None</option>
+              </select><br>
+              <button type="submit">Get Order</button>
+          </form>
+      </div>
+      <div class="col-6">
+        <h2>Order Receipt</h2>
+          <p>Size: <span id="sizeDisplay"></span></p>
+          <p>Crust: <span id="crustDisplay"></span></p>
+          <p>Sauce: <span id="sauceDisplay"></span></p>
+          <p>Cheese: <span class="cheese"></span></p>
+          <p>Meat: <span class="meat"></span></p>
+          <p>Greens: <span class="greens"></span></p>
+          <p>Other Toppings: <span class="other"></span></p>
+          <p>Total Price: <span class="total"></span></p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
