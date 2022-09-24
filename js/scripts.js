@@ -43,6 +43,10 @@ function handleFormSubmission(event) {
   document.querySelector(".cheese").innerText = cheeseSelected;
   let meatSelected = document.getElementById("meat").value;
   document.querySelector(".meat").innerText = meatSelected;
+  let greensSelected = document.querySelector("input[name='greens']:checked").value;
+  document.querySelector(".greens").innerText = greensSelected;
+  let otherSelected = document.getElementById("other").value;
+  document.querySelector(".other").innerText = otherSelected;
 
   let pizza = new Pizza(sizeSelected, crustSelected);
   console.log(pizza.formatPrice());
