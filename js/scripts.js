@@ -52,9 +52,8 @@ function handleFormSubmission(event) {
   document.querySelector(".greens").innerText = greensSelected;
   let otherSelected = document.getElementById("other").value;
   document.querySelector(".other").innerText = otherSelected;
-
-  let pizza = new Pizza(sizeSelected, crustSelected);
-  console.log(pizza.formatPrice());
+  let pizza = new Pizza(sizeSelected, crustSelected, sauceSelected, cheeseSelected, meatSelected, greensSelected, otherSelected);
+  document.querySelector(".total").innerText = pizza.formatPrice();
 }
 
 window.addEventListener("load", function() {
