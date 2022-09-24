@@ -33,7 +33,14 @@ Pizza.prototype.formatPrice = function() {
 //UI Logic
 function handleFormSubmission(event) {
   event.preventDefault();
-  let pizza = new Pizza("Small","Traditional");
+  let sizeSelected = document.getElementById("size").value;
+  document.getElementById("sizeDisplay").innerText = sizeSelected;
+  let crustSelected = document.querySelector("input[name='crust']:checked").value;
+  document.getElementById("crustDisplay").innerText = crustSelected;
+  let sauceSelected = document.getElementById("sauce").value;
+  document.getElementById("sauceDisplay").innerText = sauceSelected;
+
+  let pizza = new Pizza(sizeSelected, crustSelected);
   console.log(pizza.formatPrice());
 }
 
