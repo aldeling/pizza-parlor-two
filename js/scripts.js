@@ -1,7 +1,12 @@
 //Business Logic
-function Pizza(size, crust) {
+function Pizza(size, crust, sauce, cheese, meat, greens, other) {
   this.size = size;
   this.crust = crust;
+  this.sauce = sauce;
+  this.cheese = cheese;
+  this.meat = meat;
+  this.greens = greens;
+  this.other = other;
 }
 
 Pizza.prototype.basePrice = function() {
