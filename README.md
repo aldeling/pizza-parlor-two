@@ -9,7 +9,7 @@ This is an application where the user is able to create a personal pizza order a
 ### Setup Instructions
 There are two ways that the user can choose to set up this application
   * First the user can fork the repository from GitHub. Once that is done they can clone the repository to their personal computer. When cloned to their computer they can then open the file, click on index.html and it should open to there default browser.
-  * Second the user can open the GitHub pages [link]() and access the webpage through this.
+  * Second the user can open the GitHub pages [link](https://aldeling.github.io/pizza-parlor-two/) and access the webpage through this.
 
 ### Known Bugs
 * There are no known bugs currently
